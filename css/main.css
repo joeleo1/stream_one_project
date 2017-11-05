@@ -5,280 +5,259 @@ html, body {
   width: 100%;
   height: auto;
   background-color: #000;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* -------------------- HEADER/NAV STYLES --------------------  */
 
 .headerMain {
-  width: 100%;
+  display: block;
+  padding: 15px 15px 0px 15px;
   font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
-  letter-spacing: 3px;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 #logoBox {
-  max-width: 280px;
+  max-width: 320px;
 }
 
 #logo {
   height: 32px;
 }
 
-.navigation {
-  flex: 0 0 40%;
-  margin: 8px;
+#burger {
+  display: block;
+  position: absolute;
+  top: 1.2em;
+  right: 1em;
+  height: 20px;
 }
 
+.navigation li {
+  margin-bottom: 0;
+}
+
+.dropdown li {
+    height: 2em;
+    margin-top: 1em;
+  }
+
 .dropdown {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  height: 0;
 }
 
 .dropdown a {
   color: #fff;
-  font-size: 16px;
-  margin: 0 10px 10px 10px;;
 }
-
-.dropdown a:hover {
-  text-decoration: none;
-}
-
-.dropdown a::after{
-  content: '';
-  display: block;
-  margin-top: 10px;
-  width: 0;
-  height: 1px;
-  background: #00FF93;
-  transition: .5s;
-}
-
-.dropdown a:hover::after{
-  width: 100%;
-}
-
-#burger {
-  display: none;
-}
-
-/* -------------------- MOBILE HEADER/NAV STYLES -------------------- */
-
-@media (max-width: 768px) {
-
-  .headerMain {
-    display: block;
-    padding: 15px 15px 0px 15px;
-  }
-
-  #logoBox {
-    max-width: 320px;
-  }
-
- #logo {
-    height: 32px;
-  }
-
-  #burger {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 30px;
-    margin: 16px 20px 0 0;
-  }
-
-.navigation {
-    position: absolute;
-    top: 80px;
-    left: 30%;
-    right: 30%;
-  }
-
-.dropdown {
-    display: block;
-    font-weight: 100;
-    text-align: center;
-    overflow: hidden;
-    height: 0;
-  }
-
-.dropdown li {
-    height: 3em;
-  }
 
 .dropdown.open {
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-  }
-
-.dropdown a:hover::after{
-    width: 0;
-  }
+  height: auto;
+  width: 100%;
+  overflow: hidden;
 }
+
+.dropdown a:hover::after {
+  width: 0;
+}
+
+/* -------------------- HOME STYLES -------------------- */
 
 /* -------------------- FOOTER STYLES -------------------- */
 
-.footWrapper {
-  position:absolute;
-  bottom:0;
-  left:0;
-  right:0;
+.footContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: .5px solid rgba(42,253,151,.6);
+}
+
+.footContainer a {
+  color: #fff;
   font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
-  letter-spacing: 1px;
-  padding: .5em .5em;
-  border-top: .5px solid rgba(51,198,110,0.6);
-}
-
-.footWrapper img {
-  width:16px;
-}
-
-.footWrapper li {
-  margin-bottom: .7em;
 }
 
 .footLinks {
   margin: 1em 0;
-  padding-left: 5em;
+  font-size: 14px;
 }
 
-.footLinks a {
-  color: #fff;
+.footLinks ul {
+  display: flex;
+  justify-content: space-around;
 }
 
 .footLinks a:hover {
   text-decoration: none;
 }
 
-.social {
+.footSocial {
   margin: 1em 0;
-  padding-left: 6em;
+  display: flex;
+  justify-content: space-around;
 }
 
-#socialLogo {
-  width: 70px;
-  max-height: 70px;
-  margin-top: 1em;
+.footSocial img {
+  height: 20px;
+  margin-top: 3px;
 }
 
-#address {
-  font-weight: 100;
-  font-size: .7em;
+.footAddress {
+  margin: 1em 0;
+  text-align: center;
   color: #fff;
-  margin: 1em 0;
-  padding-left: 1em;
+  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 2em;
 }
 
-#address h6 {
-  margin: 4px 0;
-}
-
-#address img {
-  width: 10px;
-  margin-right: 6px;
+.footAddress img {
+  height: 14px;
+  margin-right: 4px;
   margin-bottom: -3px;
 }
 
-#copyright {
-  display:flex;
-  justify-content:space-between;
-  color: #fff;
-  font-weight: 100;
-  font-size: 12px;
-  padding: 1.5em 30px 0 30px;
-  border-top: .5px solid rgba(51,198,110,0.6);
-}
-
-#footLogo {
-  width: 20px;
-  height: 20px;
-}
-
-.btns {
-  margin: 1em 0;
-  padding-left: 2em;
+.footBtns {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0 .5em 0;
+  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
 }
 
 .button {
-  border: .5px solid #00FF93;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  display: block;
-  font-size: 14px;
-  font-weight: 100;
-  margin: 1em 4px;
-  max-width: 130px;
-}
-
-.button:hover {
+  background-color: transparent;
   color: #fff;
-  text-decoration: none;
+  margin: 0 1em;
+  max-width: 80px;
 }
 
-.button img {
-  height: 10px;
-  margin-left: 2px;
+.copy {
+  margin: 1em 0;
+  padding-top: 1em;
+  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+  border-top: .5px solid rgba(42,253,151,.6);
+  /*border-image: linear-gradient(to left, rgba(0, 0, 0, 1) 1%, rgba(42,253,151, 1) 50%, rgba(0, 0, 0, 1) 100%) 100% 0 0 0/.5px stretch;*/
 }
 
-/* -------------------- MOBILE FOOTER STYLES -------------------- */
+.copy img {
+  height: 20px;
+  margin-top: 6px;
+}
 
-@media (max-width:767px) {
+/* -------------------- TAB AND DESKTOP HEADER/NAV STYLES -------------------- */
 
-  .footLinks {
-    margin-bottom: 0;
+@media (min-width: 768px) {
+
+  .headerMain {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
+    letter-spacing: 3px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
+
+  #logoBox {
+    max-width: 280px;
+  }
+
+  #logo {
+    height: 32px;
+    margin-top: 1em;
+  }
+
+  .navigation {
+    flex: 0 0 40%;
+    margin: 8px;
+  }
+
+  .dropdown {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .dropdown a {
+    color: #fff;
+    font-size: 12px;
+    margin: 0 10px 10px 10px;;
+  }
+
+  .dropdown a:hover {
+    text-decoration: none;
+  }
+
+  .dropdown a::after{
+    content: '';
+    display: block;
+    margin-top: 10px;
+    width: 0;
+    height: 1px;
+    background: #00FF93;
+    transition: .5s;
+  }
+
+  .dropdown a:hover::after{
+    width: 100%;
+  }
+
+  #burger {
+    display: none;
+  }
+
+}
+
+/* -------------------- TAB AND DESKTOP FOOTER STYLES -------------------- */
+
+@media (min-width: 768px) {
 
   .footLinks ul {
-    display:flex;
-    justify-content:space-around;
-    padding: 0 15px;
+    display: block;
+    padding-left: 30%;
   }
 
-  .social {
-    padding: 0 1em;
-    margin-bottom: 0;
+  .footLinks li {
+    margin-top: 2em;
   }
 
-  .social ul {
-    display:flex;
-    justify-content:space-around;
-  }
-
-  #address {
-    text-align: center;
-    padding: 0 15px;
-  }
-
-  #copyright {
+  .footSocial {
     flex-direction: column;
-    text-align: center;
-    margin-top: 6px;
+    padding-left: 10%;
   }
 
-  #footLogo {
-    margin: auto;
+  .footSocial a {
     margin-top: 1em;
-    margin-bottom: 1em;
   }
 
-  .btns {
-    text-align: center;
-    padding: inherit;
-    margin: 0 auto;
+  .footAddress {
+    text-align: left;
+    margin-top: 2em;
+    padding-left: 5%;
+  }
+
+  .footBtns {
+    flex-direction: column;
+    padding-top: 2em;
   }
 
   .button {
-    display: inline-block;
+    margin: 1em auto;
   }
 
-  .footLinks {
-    padding-left: 15px;
+  .copy {
+    display: flex;
+    justify-content: space-between;
   }
+
 }
