@@ -104,7 +104,6 @@ html, body {
 .hh_banner {
   position: absolute;
   display: block;
-  /*padding: 10px;*/
   top: 18%;
   left: 10%;
   width: 80%;
@@ -115,7 +114,7 @@ html, body {
 
 .hh_logo {
   padding: 6px 0 6px 8px;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 2em;
   max-width: 120px;
   max-height: 126px;
@@ -126,16 +125,20 @@ html, body {
 }
 
 .hh_text_one {
-  letter-spacing: 2px;
   text-align: center;
-  margin-top: .5em;
-  font-weight: 100;
+  margin-top: 1em;
+  font-weight: 400;
+}
+
+.hh_text_one p {
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .hh_btns {
   display: flex;
   justify-content: center;
-  margin-top: .5em;
+  margin-top: 1em;
 }
 
 .hh_button {
@@ -149,12 +152,25 @@ html, body {
 .manc_info {
   font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
   margin: 0 auto;
+  position: relative;
+}
+
+.mi_info_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(/content/images/manchester-skyline-1.jpg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .5;
 }
 
 .mi_text {
   padding: 3em 2em;
   color: #fff;
-  background-color: rgb(48, 48, 48);
 }
 
 .mi_text h1 {
@@ -170,24 +186,22 @@ html, body {
   line-height: 1.2em;
 }
 
-.row .manc_info_review {
-  margin: 0;
-}
-
 .mi_review_i {
-  background-color: rgb(190, 190, 190);
+  /*background-color: rgb(190, 190, 190);*/
   padding: 3em 2em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  color: #fff;
 }
 
 .mi_review_ii {
-  background-color: rgb(214, 212, 212);
+  /*background-color: rgb(214, 212, 212);*/
   padding: 3em 2em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  color: #fff;
 }
 
 .mi_cols p {
@@ -211,14 +225,65 @@ html, body {
 
 .hm_images {
   height: 300px;
-  padding: 0;
+  padding: 1em;
 }
 
 .hm_record {
   background-image: url(/content/images/mic1.jpg);
-  background-position: center;
+  background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  opacity: .7;
+}
+
+.hm_rec_overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: .5px solid #fff;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+  transition: .8s ease;
+}
+
+.hm_rec_text {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  display: inline-block;
+  color: #fff;
+  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 1.5em;
+}
+
+.hm_rec_text img {
+  height: 20px;
+  margin-right: 18px;
+  transition-delay: 11s ease;
+}
+
+.vl {
+  border-left: 1px solid #fff;
+  height: 120px;
+  margin: .6em 0 .6em 3px;
+}
+
+.hm_rec_text_two {
+  background-color: rgba(112, 255, 0, 0.4);
+  font-size: .5em;
+  padding: 12px;
+}
+
+.hm_record:hover {
+
+}
+
+.hm_record:hover .hm_rec_overlay {
+  opacity: 1;
 }
 
 .hm_mixing {
@@ -226,6 +291,8 @@ html, body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  color: #fff;
+  opacity: .5;
 }
 
 .hm_master {
@@ -233,6 +300,7 @@ html, body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: .6;
 }
 
 .hm_online {
@@ -240,11 +308,13 @@ html, body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: .8;
 }
 
 .hm_video {
   height: 100%;
   padding: 0;
+  opacity: .6;
 }
 
 /* -------------------- FOOTER STYLES -------------------- */
