@@ -19,9 +19,9 @@
 
   </head>
 
-    <body ng-app="bdSite" ng-controller="headerController">
+    <body ng-app="bdSite">
 
-      <header ng-include='"partials/header.html"'></header>
+      <header ng-include='"partials/header.html"'ng-controller="headerCtrl"></header>
       <main ng-view></main>
       <footer ng-include='"partials/footer.html"'></footer>
 
@@ -31,7 +31,8 @@
       <script src="bower_components/angular-route/angular-route.min.js"></script>
 
       <script src='js/app.js'></script>
-      <script src='js/headerController.js'></script>
+      <script src='js/headerCtrl.js'></script>
+      <script src='js/homeCtrl.js'></script>
     </body>
 
   </html>

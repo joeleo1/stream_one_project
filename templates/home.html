@@ -43,36 +43,64 @@
   <section class="row home_media">
     <div class="col-md-6 hm_images_wrapper">
       <div class="col-sm-6 hm_images hm_record">
-        <div class="hm_rec_overlay">
-          <div class="hm_rec_text">
-            <h1><img src="content/images/mic-b.svg" alt=""> RECORDING</h1>
-              <div class="vl">
-                
-              </div>
-                <div class="hm_rec_text_two">
-                  <p>We have a huge collection of high end microphones.</p>
-                  <br>
-                  <p>Vintage or Modern.</p>
-                </div>
+        <div class="hm_overlay">
+          <div class="hm_text">
+            <div class="hm_text_two">
+              <img src="content/images/mic-b.svg" alt="">
+              <h1>Recording</h1>
+              <p>We have a huge collection of high end microphones to suit any recording situation or voice.</p>
+              <p>Vintage or Modern Sir?</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="col-sm-6 hm_images hm_mixing">
-
+        <div class="hm_overlay">
+          <div class="hm_text">
+            <div class="hm_text_two">
+              <img src="content/images/levels.svg" alt="">
+              <h1>Mixing</h1>
+              <p>Equipped with an SSL 4000 G Series console and an array of vintage analogue outboard gear.</p>
+              <p>Pro Tool and Logic are the DAW's of choice.</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-sm-6 hm_images hm_master">
-
+        <div class="hm_overlay">
+          <div class="hm_text">
+            <div class="hm_text_two">
+              <img src="content/images/record.svg" alt="">
+              <h1>Mastering</h1>
+              <p>Top of the line mastering EQ's and compressors, a Studer A800 multi track tape recorder and a pair of PMC IB2 XBDS-A Mastering Monitors.</p>
+              <p>Who's your Master?</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-sm-6 hm_images hm_online">
-
+        <div class="hm_overlay">
+          <div class="hm_text">
+            <div class="hm_text_two">
+              <img src="content/images/laptop.svg" alt="">
+              <h1>Online Services</h1>
+              <p>If you already have tracks recorded then we can mix and master them for you using our online service.</p>
+              <p><span style="font-weight: 400">Note:</span> There are minimum requirements in place for pre-recorded tracks.<br><br>Simply send us your tracks and we'll take it from there.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="col-sm-12 col-md-6 hm_video">
-      <video height="300" width="100%" poster="content/images/drumRoom.jpeg" controls>
+      <video id="vid" height="100%" width="100%">
         <source src="content/video/Recording Studio Promo Video.mp4" type="video/mp4">
 
-        Your browser does not support HTML5 video.
+
+
       </video>
+      <div>
+        <img ng-click="playPause()" id="play_btn" src="content/images/ios-play.svg" alt="">
+      </div>
     </div>
   </section>
 </div>

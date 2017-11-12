@@ -1,6 +1,6 @@
-angular
-    .module('bdSite')
-    .controller('headerController', function($scope) {
+angular.module('bdSite')
+
+    .controller('headerCtrl', function($scope) {
 
 
       $scope.myFunc1 = function() {

@@ -237,9 +237,9 @@ html, body {
   opacity: .7;
 }
 
-.hm_rec_overlay {
+.hm_overlay {
   background-color: rgba(0, 0, 0, 0.6);
-  border-bottom: .5px solid #fff;
+  border-bottom: 10px solid rgba(42,253,151,.8);
   opacity: 0;
   position: absolute;
   top: 0;
@@ -250,39 +250,60 @@ html, body {
   transition: .8s ease;
 }
 
-.hm_rec_text {
+.hm_text {
   position: absolute;
-  top: 1em;
-  left: 1em;
-  display: inline-block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   color: #fff;
   font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
-  font-size: 1.5em;
+  padding: 0 1em;
 }
 
-.hm_rec_text img {
-  height: 20px;
-  margin-right: 18px;
-  transition-delay: 11s ease;
+.hm_text img {
+  height: 40px;
+  align-self: flex-start;
 }
 
-.vl {
-  border-left: 1px solid #fff;
-  height: 120px;
-  margin: .6em 0 .6em 3px;
-}
-
-.hm_rec_text_two {
-  background-color: rgba(112, 255, 0, 0.4);
+.hm_text_two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   font-size: .5em;
   padding: 12px;
+  width: 100%;
+  height: 100%;
 }
 
-.hm_record:hover {
-
+.hm_text_two h1 {
+  font-size: 32px;
+  font-weight: 300;
 }
 
-.hm_record:hover .hm_rec_overlay {
+.hm_text_two p {
+ font-size: 14px;
+ text-align: left;
+ font-weight: 300;
+}
+
+.hm_text_two p:first-of-type {
+  font-size: 18px;
+}
+
+.hm_record:hover .hm_overlay {
+  opacity: 1;
+}
+
+.hm_mixing:hover .hm_overlay {
+  opacity: 1;
+}
+
+.hm_master:hover .hm_overlay {
+  opacity: 1;
+}
+
+.hm_online:hover .hm_overlay {
   opacity: 1;
 }
 
@@ -292,7 +313,7 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  opacity: .5;
+  opacity: .8;
 }
 
 .hm_master {
@@ -300,7 +321,7 @@ html, body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: .6;
+  opacity: .8;
 }
 
 .hm_online {
@@ -314,7 +335,14 @@ html, body {
 .hm_video {
   height: 100%;
   padding: 0;
-  opacity: .6;
+}
+
+#play_btn {
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* -------------------- FOOTER STYLES -------------------- */
