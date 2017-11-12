@@ -8,6 +8,10 @@ html, body {
   overflow-x: hidden;
 }
 
+ a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+
 /* -------------------- HEADER/NAV STYLES --------------------  */
 
 .headerMain {
@@ -27,11 +31,20 @@ html, body {
   margin-left: 10px;
 }
 
-#logo {
-  height: 32px;
+#logoBox h2 {
+  color: #fff;
+  margin-top: -30px;
+  font-size: 12px;
+  font-weight: 300;
+  margin-left: 50px;
+  letter-spacing: .5px;
+  word-spacing: 2px;
+  display: none;
 }
 
-
+#logo {
+  height: 40px;
+}
 
 #burger {
   display: block;
@@ -130,10 +143,11 @@ html, body {
   text-align: center;
   margin-top: 1em;
   font-weight: 400;
+  word-spacing: 3px;
 }
 
 .hh_text_one p {
-  font-weight: 300;
+  font-weight: 00;
   font-size: 16px;
 }
 
@@ -445,7 +459,7 @@ html, body {
     z-index: 1;
     width: 100%;
     font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -453,11 +467,14 @@ html, body {
   }
 
   #logoBox {
-    max-width: 280px;
+    max-width: 360px;
+  }
+
+  #logoBox h2 {
+    display: block;
   }
 
   #logo {
-    height: 32px;
     margin-top: 1em;
   }
 
@@ -477,6 +494,7 @@ html, body {
   .dropdown a {
     color: #fff;
     font-size: 12px;
+    font-weight: 300;
     margin: 0 10px 10px 10px;;
   }
 
@@ -488,6 +506,7 @@ html, body {
     content: '';
     display: block;
     margin-top: 10px;
+    margin-left: 3px;
     width: 0;
     height: 1px;
     background: #00FF93;
