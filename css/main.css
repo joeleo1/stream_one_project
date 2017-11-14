@@ -51,9 +51,9 @@ html, body {
 #burger {
   display: block;
   position: absolute;
-  top: 2em;
+  top: 1.7em;
   right: 2em;
-  height: 20px;
+  height: 30px;
 }
 
 .navigation li {
@@ -67,7 +67,6 @@ html, body {
 
 .dropdown {
   display: block;
-  margin-top: .7em;
   background-color: rgba(0,0,0,0.8);
   text-align: center;
   overflow: hidden;
@@ -87,6 +86,7 @@ html, body {
   margin-top: 0;
   height: 100vh;
   width: 100%;
+  border-bottom: 10px solid rgba(42,253,151,.8);
   overflow: hidden;
   transition: .5s;
 }
@@ -124,11 +124,11 @@ html, body {
 .hh_banner {
   position: absolute;
   display: block;
-  top: 18%;
+  top: 30%;
   left: 10%;
   width: 80%;
   padding: 0;
-  color: white;
+  color: #dedede;
   font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
 }
 
@@ -138,7 +138,7 @@ html, body {
   font-size: 2em;
   max-width: 120px;
   max-height: 126px;
-  border: 1px solid rgba(185,241,236,0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   text-align: center;
   margin: 0 auto;
 
@@ -147,8 +147,9 @@ html, body {
 .hh_text_one {
   text-align: center;
   margin-top: 1em;
-  font-weight: 400;
+  font-weight: 300;
   word-spacing: 3px;
+  letter-spacing: .5px;
 }
 
 .hh_text_one p {
@@ -176,22 +177,10 @@ html, body {
   position: relative;
 }
 
-.mi_info_background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(/content/images/manchester-skyline-1.jpg);
-  background-position: right;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: .5;
-}
-
 .mi_text {
   padding: 3em 2em;
-  color: #fff;
+  color: #dedede;
+  background-color: #1f1f1f;
 }
 
 .mi_text h1 {
@@ -199,6 +188,7 @@ html, body {
   font-size: 1.5em;
   padding-bottom: 1em;
   word-spacing: .5em;
+  color: rgba(42,253,151,.8)
 }
 
 .mi_text p {
@@ -208,7 +198,8 @@ html, body {
 }
 
 .mi_review_i {
-  /*background-color: rgb(190, 190, 190);*/
+  background-color: #383838;
+  font-weight: 300;
   padding: 3em 2em;
   display: flex;
   flex-direction: column;
@@ -217,7 +208,8 @@ html, body {
 }
 
 .mi_review_ii {
-  /*background-color: rgb(214, 212, 212);*/
+  background-color: #505050;
+  font-weight: 300;
   padding: 3em 2em;
   display: flex;
   flex-direction: column;
@@ -283,7 +275,7 @@ html, body {
 }
 
 .hm_text img {
-  height: 30px;
+  height: 24px;
   align-self: flex-start;
 }
 
@@ -291,14 +283,18 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  font-size: .5em;
   padding: 12px;
   width: 100%;
   height: 100%;
 }
 
 .hm_text_two h1 {
-  font-size: 32px;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.hm_text_two p:first-of-type {
+  font-size: 18px;
   font-weight: 300;
 }
 
@@ -306,10 +302,6 @@ html, body {
  font-size: 14px;
  text-align: left;
  font-weight: 300;
-}
-
-.hm_text_two p:first-of-type {
-  font-size: 18px;
 }
 
 .hm_record:hover .hm_overlay {
@@ -333,7 +325,6 @@ html, body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #fff;
   opacity: .8;
 }
 
@@ -373,16 +364,16 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #222222;
+  background-color: #1c1c1c;
 }
 
 .footContainer a {
-  color: #fff;
+  color: #dedede;
   font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
 }
 
 .footLinks {
-  margin: 1em 0;
+  margin: 3em 0;
   font-size: 14px;
 }
 
@@ -396,7 +387,7 @@ html, body {
 }
 
 .footSocial {
-  margin: 1em 0;
+  margin: 3em 0 0 0;
   display: flex;
   justify-content: space-around;
 }
@@ -407,9 +398,9 @@ html, body {
 }
 
 .footAddress {
-  margin: 1em 0;
+  margin: 3em 0;
   text-align: center;
-  color: #fff;
+  color: #dedede;
   font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -418,14 +409,14 @@ html, body {
 
 .footAddress img {
   height: 14px;
-  margin-right: 4px;
+  margin-right: 12px;
   margin-bottom: -3px;
 }
 
 .footBtns {
   display: flex;
   justify-content: center;
-  margin: 1em 0 .5em 0;
+  margin: 1em 0 2em 0;
   font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
 }
 
@@ -439,14 +430,14 @@ html, body {
 }
 
 .copy {
-  margin: 1em 0 0 0;
+  margin: 0;
   padding: 1em;
   font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
   font-weight: 300;
   font-size: 12px;
-  color: #fff;
+  color: #dedede;
   text-align: center;
-  background-color: #171717;
+  background-color: #0a0a0a;
   border-top: 1px solid rgba(42,253,151,.6);
 }
 
@@ -458,6 +449,8 @@ html, body {
   height: 30px;
   margin-top: 6px;
 }
+
+/* -------------------- MEDIA QUERIES FOR TABLET UPWARDS -------------------- */
 
 /* -------------------- TAB AND DESKTOP HEADER/NAV STYLES -------------------- */
 
@@ -504,9 +497,10 @@ html, body {
 
   .dropdown a {
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
-    margin: 0 10px 10px 10px;;
+    letter-spacing: .5PX;
+    margin: 0 10px 10px 10px;
   }
 
   .dropdown a:hover {
@@ -532,15 +526,11 @@ html, body {
     display: none;
   }
 
-}
-
 /* -------------------- TAB AND DESKTOP HOME STYLES -------------------- */
-
-@media (min-width: 768px) {
 
   .hh_banner {
     position: absolute;
-    top: 25%;
+    top: 30%;
     width: 60%;
     left: 20%;
   }
@@ -583,11 +573,38 @@ html, body {
     font-weight: 100;
   }
 
-}
+  /* -------------------- EQUAL HEIGHT COLUMS FROM DESKTOP -------------------- */
+
+  @media (min-width: 992px) {
+
+    .mi_cols {
+      min-height: 360px;
+      padding: 1.5em;
+    }
+
+    .mi_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .mi_text p {
+      margin: 0 0;
+    }
+
+    .mi_text h1 {
+      padding: 0;
+      /*margin-bottom: -.5em;*/
+    }
+
+
+  }
 
 /* -------------------- TAB AND DESKTOP FOOTER STYLES -------------------- */
 
-@media (min-width: 768px) {
+  .footLinks {
+    margin: 1em 0;
+  }
 
   .footLinks ul {
     display: block;
@@ -601,6 +618,7 @@ html, body {
   .footSocial {
     flex-direction: column;
     padding-left: 10%;
+    margin: 1em 0;
   }
 
   .footSocial a {
