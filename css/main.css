@@ -387,6 +387,14 @@ html, body {
   transform: translate(-50%, -50%);
 }
 
+/* -------------------- ABOUT STYLES -------------------- */
+
+.about_wrapper {
+  background-color: red;
+  padding: 0;
+  height: 1000px;
+}
+
 /* -------------------- FOOTER STYLES -------------------- */
 
 .footContainer {
@@ -684,6 +692,8 @@ html, body {
 
 }
 
+/* -------------------- MEDIA QUERIES FOR DESKTOP UPWARDS -------------------- */
+
 /* -------------------- EQUAL HEIGHT COLUMS FROM DESKTOP -------------------- */
 
 @media (min-width: 992px) {
@@ -708,5 +718,6 @@ html, body {
     /*margin-bottom: -.5em;*/
   }
 
-
 }
+
+/* -------------------- DESKTOP HOME STYLES -------------------- */

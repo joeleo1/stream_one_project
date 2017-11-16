@@ -15,14 +15,14 @@ angular.module('RouteControllers', [])
 
   else {
       myVideo.pause();
-      hide_overlay.style.height = "90%";
+      hide_overlay.style.height = "100%";
   }
 
 }
 
   $scope.vidCtrl = function() {
 
-    var vdCon = document.getElementById('vid_overlay');
+    var vdCon = document.getElementById('vid');
 
       if (vdCon.hasAttribute("controls")) {
           vdCon.removeAttribute("controls")
@@ -31,5 +31,7 @@ angular.module('RouteControllers', [])
         vdCon.setAttribute("controls","controls");
     }
 }
+
+
 
 });
