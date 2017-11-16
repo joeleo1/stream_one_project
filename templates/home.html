@@ -3,12 +3,10 @@
     <div class="hh_overlay">
       <div class="hh_banner">
         <div class="hh_logo">
-          <h1><span style="color: #2afd97; letter-spacing: 8px;">BOX</span>
-            <h1><span style="letter-spacing: 10px;">DEL</span></h1>
-            <h1><span style="letter-spacing: 10px;">UXE</span></h1>
-
+          <h1><span style="color: #2afd97; letter-spacing: 13px;">BOX</span>
+            <h1><span style="letter-spacing: 18px;">DEL</span></h1>
+            <h1><span style="letter-spacing: 16px;">UXE</span></h1>
         </div>
-
         <div class="hh_text_one">
           <h1>RECORDING STUDIO MANCHESTER</h1>
           <br>
@@ -18,6 +16,14 @@
           <button type="button" class="btn btn-default hh_button">STUDIO</button>
           <button type="button" class="btn btn-default hh_button">ONLINE</button>
         </div>
+      </div>
+      <div class="hero_social">
+        <ul>
+          <a href="/"><img src="content/images/fbook.svg" alt="facebook"></a>
+          <a href="/"><img src="content/images/twitt.svg" alt="twitter"></a>
+          <a href="/"><img src="content/images/instagram.svg" alt="instagram"></a>
+          <a href="/"><img src="content/images/social-youtube-outline.svg" alt="youtube"></a>
+        </ul>
       </div>
     </div>
   </section>
@@ -89,14 +95,11 @@
       </div>
     </div>
     <div class="col-sm-12 col-md-6 hm_video">
-      <video id="vid" height="100%" width="100%">
-        <source src="content/video/Recording Studio Promo Video.mp4" type="video/mp4">
-
-
-
+      <video id="vid" height="100%" width="100%" controls>
+        <source src="content/video/Recording Studio Promo Video.mp4" type="video/mp4" >
       </video>
-      <div>
-        <img ng-click="playPause()" id="play_btn" src="content/images/ios-play.svg" alt="">
+      <div ng-click="playPause(); vidCtrl()" id="vid_overlay">
+        <img id="play_btn" src="content/images/ios-play.svg" alt="">
       </div>
     </div>
   </section>
