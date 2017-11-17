@@ -392,7 +392,23 @@ html, body {
 .about_wrapper {
   background-color: red;
   padding: 0;
-  height: 1000px;
+  height: 100vh;
+}
+
+/* -------------------- SERVICES STYLES -------------------- */
+
+.services_wrapper {
+  background-color: blue;
+  padding: 0;
+  height: 100vh;
+}
+
+/* -------------------- CONTACT STYLES -------------------- */
+
+.contact_wrapper {
+  background-color: #17a14e;
+  padding: 0;
+  height: 100vh;
 }
 
 /* -------------------- FOOTER STYLES -------------------- */
@@ -701,6 +717,10 @@ html, body {
   .mi_cols {
     min-height: 360px;
     padding: 1.5em;
+  }
+
+  .mi_review_i, .mi_review_ii {
+    justify-content: center;
   }
 
   .mi_text {

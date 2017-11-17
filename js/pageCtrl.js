@@ -1,7 +1,6 @@
 angular.module('RouteControllers', [])
 
-.controller('homeCtrl', function($scope) {
-
+.controller('videoCtrl', function($scope) {
 
   $scope.playPause = function() {
 
@@ -18,7 +17,7 @@ angular.module('RouteControllers', [])
       hide_overlay.style.height = "100%";
   }
 
-}
+  }
 
   $scope.vidCtrl = function() {
 
@@ -30,7 +29,7 @@ angular.module('RouteControllers', [])
        } else {
         vdCon.setAttribute("controls","controls");
     }
-}
+  }
 
 
 
