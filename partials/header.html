@@ -1,22 +1,42 @@
 <header class="headerMain">
 
   <div id="logoBox">
-    <a href="/"><img id="logo" src="content/images/bd.svg" alt="logo"><h2>BOX DELUXE RECORDING STUDIO</h2></a> <!-- LOGO -->
+    <a href="."><img id="logo" src="content/images/bd.svg" alt="logo"><h2>BOX DELUXE RECORDING STUDIO</h2></a> <!-- LOGO -->
   </div>
 
 
 
-  <nav class="navigation">
+  <nav class="navigation">            <!-- MOBILE NAV -->
 
     <ul id="toggle" class="dropdown">
-      <li><a href="/">HOME</a></li>
-      <li><a href="/about">ABOUT</a></li>
-      <li><a href="/services">SERVICES</a></li>
-      <li><a href="/contact">CONTACT</a></li>
+      <li><a ng-click="menuIcon(); openClose()" href=".">HOME</a></li>
+      <li><a ng-click="menuIcon(); openClose()" href="about">ABOUT</a></li>
+      <li><a ng-click="menuIcon(); openClose()" href="services">SERVICES</a></li>
+      <li><a ng-click="menuIcon(); openClose()" href="contact">CONTACT</a></li>
+      <ul class="header_social">
+        <a href="/"><img src="content/images/fbook.svg" alt="facebook"></a>
+        <a href="/"><img src="content/images/twitt.svg" alt="twitter"></a>
+        <a href="/"><img src="content/images/instagram.svg" alt="instagram"></a>
+        <a href="/"><img src="content/images/social-youtube-outline.svg" alt="youtube"></a>
+      </ul>
+    </ul>
+
+
+  </nav>
+
+  <img ng-click="menuIcon(); openClose()" id="burger" src="content/images/navicon.svg" alt=""> <!-- BURGER/CANCEL -->
+
+  <nav class="desk_nav">            <!-- DESKTOP NAV -->
+
+    <ul class="desk_list">
+      <li><a href=".">HOME</a></li>
+      <li><a href="about">ABOUT</a></li>
+      <li><a href="services">SERVICES</a></li>
+      <li><a href="contact">CONTACT</a></li>
     </ul>
 
   </nav>
 
-  <img ng-click="myFunc1(); myFunc2()" id="burger" src="content/images/navicon.svg" alt=""> <!-- BURGER/CANCEL -->
+
 
 </header>

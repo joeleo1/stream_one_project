@@ -6,7 +6,7 @@ angular.module('bdSite').config(function($locationProvider, $routeProvider) {
 
 	$routeProvider
 
-	.when('/home', {
+	.when('/', {
 			templateUrl: 'templates/home.html',
 			controller: 'videoCtrl'
 	})
@@ -19,7 +19,7 @@ angular.module('bdSite').config(function($locationProvider, $routeProvider) {
 	.when('/contact', {
 		  templateUrl: 'templates/contact.html',
 	})
-	.otherwise({redirectTo: '/home'});
+	.otherwise({redirectTo: '/'});
 
 
 });

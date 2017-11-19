@@ -1,24 +1,33 @@
 angular.module('bdSite')
 
-    .controller('headerCtrl', function($scope) {
+    .controller('headerCtrl', ["$scope", "$window", function($scope, $window) {
 
+        $scope.menuIcon = function() {
 
-      $scope.myFunc1 = function() {
+        if($window.document.body.clientWidth < 768) {
 
-      var img = document.getElementById('burger').src;
+        var img = document.getElementById('burger').src;
 
-      if (img.indexOf('navicon.svg')!=-1) {
-          document.getElementById('burger').src  = 'content/images/cancel.svg';
-      }
-      else {
-          document.getElementById('burger').src = 'content/images/navicon.svg';
-      }
+        if (img.indexOf('navicon.svg')!=-1) {
+            document.getElementById('burger').src  = 'content/images/cancel.svg';
+        }
 
-      $scope.myFunc2 = function() {
+        else {
+            document.getElementById('burger').src = 'content/images/navicon.svg';
+        }
+
+        $scope.openClose = function() {
 
         var toggleOpen = document.getElementById('toggle');
         toggleOpen.classList.toggle('open');
 
-      }
+        }
+
+
+
+
+
     }
-});
+  }
+
+}]);
