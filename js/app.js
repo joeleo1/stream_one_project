@@ -2,24 +2,25 @@ angular.module('bdSite', ['ngRoute', 'RouteControllers']);
 
 angular.module('bdSite').config(function($locationProvider, $routeProvider) {
 
-	$locationProvider.html5Mode(true);
+ $locationProvider.html5Mode(true);
 
-	$routeProvider
+ $routeProvider
 
-	.when('/', {
-			templateUrl: 'templates/home.html',
-			controller: 'videoCtrl'
-	})
-	.when('/about', {
-			templateUrl: 'templates/about.html',
-	})
-	.when('/services', {
-			templateUrl: 'templates/services.html',
+  .when('/', {
+   templateUrl: 'templates/home.html',
+   controller: 'videoCtrl'
   })
-	.when('/contact', {
-		  templateUrl: 'templates/contact.html',
-	})
-	.otherwise({redirectTo: '/'});
-
+  .when('/about', {
+   templateUrl: 'templates/about.html',
+  })
+  .when('/services', {
+   templateUrl: 'templates/services.html',
+  })
+  .when('/contact', {
+   templateUrl: 'templates/contact.html',
+  })
+  .otherwise( {
+   redirectTo: '/'
+  });
 
 });
