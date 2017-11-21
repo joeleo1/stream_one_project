@@ -31,7 +31,6 @@ html, body {
 }
 
 #logoBox {
-  max-width: 320px;
   margin-left: 10px;
 }
 
@@ -55,7 +54,7 @@ html, body {
 }
 
 .dropdown li {
-  height: 24px;
+  /*height: 24px;*/
   margin-bottom: 1.8em;
   text-align: left;
   padding-left: 2em;
@@ -97,7 +96,7 @@ html, body {
   margin-top: 0;
   height: 100vh;
   width: 100%;
-  border-bottom: 4px solid rgba(42,253,151,.8);
+  /*border-bottom: 4px solid rgba(42,253,151,.8);*/
   overflow: hidden;
   transition: .5s;
 }
@@ -126,7 +125,7 @@ html, body {
 
 .hh_overlay {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, .6);
   top: 0;
   left: 0;
   right: 0;
@@ -135,64 +134,37 @@ html, body {
 
 .hh_banner {
   position: absolute;
-  display: block;
-  top: 20%;
-  left: 10%;
-  width: 80%;
-  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
+  padding-left: 1em;
 }
 
-.hh_logo {
-  padding: 6px 0 6px 10px;
-  font-weight: 400;
-  font-size: 1em;
-  max-width: 84px;
-  max-height: 106px;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  text-align: center;
-  margin: 0 auto;
-  line-height: 1.4em;
+.hero_logo img {
+  height: 22vh;
 }
 
-#logo_line_one {
-  color: #2afd97;
-  letter-spacing: 14px;
-}
-
-#logo_line_two {
-  letter-spacing: 15px;
-}
-
-#logo_line_three {
-  letter-spacing: 15px;
+.hero_logo_text {
+  font-weight: 100;
+  font-size: 42px;
+  margin-top: 40px;
+  margin-left: 14px;
+  color: #e7e7e7;
 }
 
 .hh_text_one {
-  text-align: center;
-  margin-top: 1em;
-  font-weight: 300;
-  word-spacing: 3px;
-  letter-spacing: .5px;
-}
-
-.hh_text_one p {
-  font-size: 16px;
-  line-height: 1.3em;
-}
-
-.hh_btns {
+  text-align: left;
   display: flex;
-  justify-content: center;
-  margin-top: 1.5em;
+  flex-direction: column;
+  color: #cfc9c9;
 }
 
-.hh_button {
-  background-color: rgba(0,0,0,0.6);
-  color: #fff;
-  margin: 0 1em;
-  border: 1px solid rgba(185,241,236,0.6);
-  font-weight: 300;
+.hh_text_one h1 {
+  font-weight:400;
+  font-size: 24px;
+  margin-top: .5em;
+  line-height: 1.5em;
 }
 
 .hero_social {
@@ -523,9 +495,9 @@ html, body {
 
 /* -------------------- MEDIA QUERIES FOR TABLET UPWARDS -------------------- */
 
-/* -------------------- TAB AND DESKTOP HEADER/NAV STYLES -------------------- */
-
 @media (min-width: 768px) {
+
+/* -------------------- TAB AND DESKTOP HEADER/NAV STYLES -------------------- */
 
   .headerMain {
     position: absolute;
@@ -533,7 +505,6 @@ html, body {
     width: 100%;
     height: 60px;
     font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
-    background-color: rgba(0, 0, 0, 0.1);
     letter-spacing: 2px;
     padding: 0 20px 0 0;
     display: flex;
@@ -543,17 +514,15 @@ html, body {
   }
 
   #logoBox {
-    min-width: 300px;
-    max-width: 380px;
     margin-left: 0;
     padding: .5em 1em;
-    background-color: rgba(0, 0, 0, .8);
-    border-right: 1px solid rgba(0, 255, 147, 0.8);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-right: 1px solid #fff;
   }
 
   #logoBox h2 {
     display: block;
-    color: #fff;
+    color: #d0d0d0;
     margin-top: -25px;
     margin-right: 2px;
     font-size: 14px;
@@ -578,16 +547,15 @@ html, body {
   .desk_nav {
     display: block;
     margin: 8px;
-    width: 50%;
+    width: 40%;
   }
 
   .desk_list {
     height: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: transparent;
     margin: 0;
-
   }
 
   .desk_list li {
@@ -598,27 +566,28 @@ html, body {
     font-size: 12px;
     font-weight: 300;
     letter-spacing: .5PX;
-    margin: 0 0 10px 16px;
-    color: #fff;
+    margin: 0 0 10px 0;
+    color: #d0d0d0;
   }
 
   .desk_list a:hover {
     text-decoration: none;
   }
 
-  .desk_list a::after{
+  .desk_list a::after {
     content: '';
     display: block;
-    margin-top: 10px;
-    margin-left: 3px;
+    margin-top: 21px;
+    margin-left: -3px;
     width: 0;
     height: 1px;
-    background: #00FF93;
+    background: rgba(23, 255, 248, 0.9);
     transition: .5s;
+    overflow: visible;
   }
 
   .desk_list a:hover::after{
-    width: 100%;
+    width: 105%;
   }
 
   #burger {
@@ -633,43 +602,31 @@ html, body {
 
   .hh_banner {
     position: absolute;
-    top: 30%;
-    width: 60%;
-    left: 20%;
-    opacity: .9;
+    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 2.8em;
   }
 
-  .hh_logo {
-    min-height: 160px;
-    max-width: 156px;
-    font-weight: 400;
-    padding-left: 12px;
-    border: 4px solid rgba(255, 255, 255, 0.8);
-  }
-
-  .hh_logo h1 {
-    font-size: 2.6em;
-    line-height: 1em;
-  }
-
-  #logo_line_two {
-    letter-spacing: 18px;
-  }
-
-  #logo_line_three {
-    letter-spacing: 16px;
+  .hero_logo_text {
+    font-weight: 100;
+    font-size: 42px;
+    margin-top: 40px;
+    margin-left: 14px;
+    color: #e7e7e7;
   }
 
   .hh_text_one {
-    width: 100%;
-    padding-top: .8em;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #cfc9c9;
   }
 
   .hh_text_one h1 {
-    font-weight: 400;
+    font-weight:400;
     font-size: 24px;
-    letter-spacing: .5px;
   }
 
   .hero_social {
@@ -685,7 +642,7 @@ html, body {
 
   .hero_social img {
     height: 16px;
-    margin: 4px 0;
+    margin: 10px 0;
   }
 
   .hero_social a {
@@ -731,16 +688,26 @@ html, body {
   }
 
   .hh_btns {
-    display: flex;
-    justify-content: center;
+    display: none
+    justify-content: flex-start;
+    margin-top: 1em;
+    padding-left: 28%;
   }
 
   .hh_button {
-    background-color: rgba(0,0,0,0.6);
-    color: #fff;
-    margin: 0 1em;
-    border: .5px solid rgba(185,241,236,0.6);
-    font-weight: 100;
+    display: none;
+    background-color: rgba(23, 255, 248, 0.1);
+    color: #d0d0d0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+    margin-left: 0;
+    margin-right: 3em;
+  }
+
+  .arrow_right {
+    height: 20px;
+    margin-right: 6px;
+    margin-left: -6px;
   }
 
 /* -------------------- TAB AND DESKTOP FOOTER STYLES -------------------- */
@@ -761,18 +728,19 @@ html, body {
 
   .footSocial {
     flex-direction: column;
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-top: .2em;
     margin: 1em 0;
   }
 
   .footSocial a {
-    margin-top: 1em;
+    margin-top: 1.3em;
   }
 
   .footAddress {
     text-align: left;
     margin-top: 2em;
-    padding-left: 5%;
+    padding-left: 0;
   }
 
   .footBtns {

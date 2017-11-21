@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 321 41 40"><defs><style>.a,.b,.d{fill:none;}.a{stroke:#fff;}.b{stroke:#00ff4e;}.c{stroke:none;}</style></defs><g class="a" transform="translate(40 321)"><rect class="c" width="41" height="40"/><rect class="d" x="0.5" y="0.5" width="40" height="39"/></g><path class="b" d="M0,0V28.98H14.544V14.765H1.771" transform="translate(46.078 326.963)"/><path class="a" d="M14.34,0V28.98H0V14.765H12.594" transform="translate(60.621 326.963)"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 155.6 67.9" style="enable-background:new 0 0 155.6 67.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:4;}
+	.st1{opacity:0.9;fill:none;stroke:#FF5117;stroke-width:4;enable-background:new    ;}
+	.st2{fill:none;stroke:#BC6868;stroke-width:2;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st4{font-family:'Lato-Hairline';}
+	.st5{font-size:20.8403px;}
+</style>
+<path class="st0" d="M2,0v61.9h50V25.3H2"/>
+<path class="st1" d="M52,23.3v38.6H24.9v-19H52"/>
+<path class="st2" d="M6.8,23.5"/>
+<text transform="matrix(1.05 0 0 1 61.4304 38.4091)"><tspan x="0" y="0" class="st3 st4 st5">BOX</tspan><tspan x="0" y="25" class="st3 st4 st5">DELUXE</tspan></text>
+</svg>
