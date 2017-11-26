@@ -23,6 +23,7 @@ html, body {
   top: 0;
   left: 0;
   right: 0;
+  /*background: rgba(0, 0, 0, 0.8);*/
   z-index: 1;
 }
 
@@ -54,7 +55,6 @@ html, body {
 }
 
 .dropdown li {
-  /*height: 24px;*/
   margin-bottom: 1.8em;
   text-align: left;
   padding-left: 2em;
@@ -96,8 +96,8 @@ html, body {
   margin-top: 0;
   height: 100vh;
   width: 100%;
-  /*border-bottom: 4px solid rgba(42,253,151,.8);*/
   overflow: hidden;
+  font-size: 5vmin;
   transition: .5s;
 }
 
@@ -125,46 +125,42 @@ html, body {
 
 .hh_overlay {
   position: absolute;
-  background-color: rgba(0, 0, 0, .6);
+  background: linear-gradient(to bottom right, rgba(1, 19, 52, 0.87), rgba(0, 43, 35, 0.6));
   top: 0;
   left: 0;
   right: 0;
   height: inherit;
 }
 
-.hh_banner {
+.jumbotron{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  width: 90%;
+  transform: translate(-50%,-50%);
+  background: transparent;
   font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
-  padding-left: 1em;
+  text-align: center;
 }
 
-.hero_logo img {
-  height: 22vh;
+.jumbotron img {
+  display: block;
+  height: 14vh;
+  margin: 0 auto 1em auto;
+  opacity: .8
 }
 
-.hero_logo_text {
+.jumbotron h1 {
   font-weight: 100;
-  font-size: 42px;
-  margin-top: 40px;
-  margin-left: 14px;
-  color: #e7e7e7;
+  font-size: 10vw;
 }
 
-.hh_text_one {
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  color: #cfc9c9;
-}
-
-.hh_text_one h1 {
-  font-weight:400;
-  font-size: 24px;
-  margin-top: .5em;
-  line-height: 1.5em;
+.jumbotron p {
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: 1em;
+  letter-spacing: 8px;
+  line-height: 26px;
 }
 
 .hero_social {
@@ -510,34 +506,24 @@ html, body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /*background-color: rgba(0, 0, 0, 1);*/
+    /*border-bottom: 1px solid rgba(255, 255, 255, 0.4);*/
     color: #d0d0d0;
   }
 
   #logoBox {
-    margin-left: 0;
-    padding: .5em 1em;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-right: 1px solid #fff;
-  }
-
-  #logoBox h2 {
-    display: block;
-    color: #d0d0d0;
-    margin-top: -25px;
-    margin-right: 2px;
-    font-size: 14px;
-    font-weight: 300;
-    margin-left: 60px;
-    letter-spacing: .5px;
-    word-spacing: 2px;
-    opacity: .8
+    margin-left: .8em;
+    margin-bottom: 0;
+    width: 62px;
+    /*background-color: rgba(112, 112, 131, 0.4);*/
+    /*border-right: .5px solid #fff;*/
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
   }
 
   #logo {
-    height: 34px;
-    margin-left: 4px;
-    margin-top: 4px;
+    height: 40px;
     opacity: .8;
+    /*padding-bottom: 6px;*/
   }
 
   .navigation {
@@ -581,7 +567,7 @@ html, body {
     margin-left: -3px;
     width: 0;
     height: 1px;
-    background: rgba(23, 255, 248, 0.9);
+    background: #fad200;
     transition: .5s;
     overflow: visible;
   }
@@ -596,38 +582,23 @@ html, body {
 
 /* -------------------- TAB AND DESKTOP HOME STYLES -------------------- */
 
-  .home_hero {
-    height: 100vh;
-  }
+.jumbotron img {
+  height: 12vh;
+}
 
-  .hh_banner {
-    position: absolute;
-    max-width: 500px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-left: 2.8em;
-  }
+.jumbotron h1 {
+  font-weight: 100;
+  font-size: 8vw;
+}
 
-  .hero_logo_text {
-    font-weight: 100;
-    font-size: 42px;
-    margin-top: 40px;
-    margin-left: 14px;
-    color: #e7e7e7;
-  }
-
-  .hh_text_one {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    color: #cfc9c9;
-  }
-
-  .hh_text_one h1 {
-    font-weight:400;
-    font-size: 24px;
-  }
+.jumbotron p {
+  font-weight: 300;
+  font-size: 1vw;
+  margin-top: 1em;
+  padding-left: 2%;
+  letter-spacing: 12px;
+  line-height: 26px;
+}
 
   .hero_social {
     position: absolute;
@@ -637,7 +608,7 @@ html, body {
     bottom: 1em;
     right: 1em;
     left: 1em;
-    opacity: .8;
+    /*opacity: .8;*/
   }
 
   .hero_social img {
@@ -657,7 +628,7 @@ html, body {
     bottom: .2em;
     left: 10%;
     text-align: center;
-    z-index: 999;
+    /*z-index: 999;*/
   }
 
   #bouncy:hover {
@@ -669,7 +640,7 @@ html, body {
   #bouncy img{
     height: 24px;
     margin: 1.2em 1em 1em 1em;
-    opacity: .6;
+    opacity: .8;
     transition: .2s;
   }
 
@@ -685,23 +656,6 @@ html, body {
 
   .home_media {
     height: 600px;
-  }
-
-  .hh_btns {
-    display: none
-    justify-content: flex-start;
-    margin-top: 1em;
-    padding-left: 28%;
-  }
-
-  .hh_button {
-    display: none;
-    background-color: rgba(23, 255, 248, 0.1);
-    color: #d0d0d0;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    font-weight: 300;
-    margin-left: 0;
-    margin-right: 3em;
   }
 
   .arrow_right {
@@ -803,6 +757,15 @@ html, body {
     padding: 0;
   }
 
-}
-
 /* -------------------- DESKTOP HOME STYLES -------------------- */
+
+  .col-xs-12.bottom h1 {
+    font-size: calc(.6rem + .5vmin);
+    color: #eeeeee;
+    font-weight: 300;
+    letter-spacing: 8px;
+    line-height: 1.6em;
+    padding-left:6px;
+  }
+
+}
