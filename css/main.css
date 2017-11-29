@@ -188,7 +188,7 @@ html, body {
   font-size: 1.5em;
   padding-bottom: 1em;
   word-spacing: .5em;
-  color: rgba(42,253,151,.8)
+  color: rgba(255, 206, 0, 0.5);
 }
 
 .mi_text p {
@@ -252,7 +252,7 @@ html, body {
 
 .hm_overlay {
   background-color: rgba(0, 0, 0, 0.6);
-  border-bottom: 10px solid rgba(42,253,151,.8);
+  border-bottom: 10px solid #FFCE00;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -260,6 +260,7 @@ html, body {
   bottom: 0;
   right: 0;
   padding: 1em;
+  transition: 1s;
 }
 
 .hm_text {
@@ -373,9 +374,47 @@ html, body {
 /* -------------------- ABOUT STYLES -------------------- */
 
 .about_wrapper {
-  background-color: red;
-  padding: 0;
+
+}
+
+.about_hero {
   height: 100vh;
+  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
+}
+
+.ah_image {
+  height: 60vh;
+  top: 0;
+  background-image: url(/content/images/manchester-skyline-1.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ah_image h1 {
+  font-weight: 100;
+  font-size: 8vw;
+  text-align: center;
+  color: rgb(238, 238, 238);
+  padding-top: 24vh;
+}
+
+.intro {
+  position: absolute;
+  height: 40vh;
+  bottom: 0;
+  font-weight: 300;
+  word-spacing: 1px;
+  background-color: rgb(24, 45, 49);
+  color: #d2d2d2;
+  padding: 2em 2em;
+  border-top: 1px solid rgba(205, 176, 43, .6);
+}
+
+.intro p {
+  font-weight: 300;
+  word-spacing: 2px;
+  line-height: 1.2em;
 }
 
 /* -------------------- SERVICES STYLES -------------------- */
@@ -477,7 +516,7 @@ html, body {
   color: #dedede;
   text-align: center;
   background-color: #0a0a0a;
-  border-top: 1px solid rgba(42,253,151,.6);
+  border-top: 1px solid #FFCE00;
 }
 
 .copy h5 {
@@ -493,7 +532,7 @@ html, body {
 
 @media (min-width: 768px) {
 
-/* -------------------- TAB AND DESKTOP HEADER/NAV STYLES -------------------- */
+/* -------------------- TAB> HEADER/NAV STYLES -------------------- */
 
   .headerMain {
     position: absolute;
@@ -580,91 +619,97 @@ html, body {
     display: none;
   }
 
-/* -------------------- TAB AND DESKTOP HOME STYLES -------------------- */
+/* -------------------- TAB> HOME STYLES -------------------- */
 
-.jumbotron img {
-  height: 12vh;
-}
-
-.jumbotron h1 {
-  font-weight: 100;
-  font-size: 8vw;
-}
-
-.jumbotron p {
-  font-weight: 300;
-  font-size: 1vw;
-  margin-top: 1em;
-  padding-left: 2%;
-  letter-spacing: 12px;
-  line-height: 26px;
-}
-
-  .hero_social {
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 1em;
-    bottom: 1em;
-    right: 1em;
-    left: 1em;
-    /*opacity: .8;*/
+  .jumbotron img {
+    height: 12vh;
   }
 
-  .hero_social img {
-    height: 16px;
-    margin: 10px 0;
+  .jumbotron h1 {
+    font-weight: 100;
+    font-size: 8vw;
   }
 
-  .hero_social a {
-    display: block;
+  .jumbotron p {
+    font-weight: 300;
+    font-size: 1vw;
+    margin-top: 1em;
+    padding-left: 2%;
+    letter-spacing: 12px;
+    line-height: 26px;
   }
 
-  #bouncy {
-    display: block;
-    height: 70px;
-    width: 80%;
-    position: absolute;
-    bottom: .2em;
-    left: 10%;
-    text-align: center;
-    /*z-index: 999;*/
+    .hero_social {
+      position: absolute;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 1em;
+      bottom: 1em;
+      right: 1em;
+      left: 1em;
+      /*opacity: .8;*/
+    }
+
+    .hero_social img {
+      height: 16px;
+      margin: 10px 0;
+    }
+
+    .hero_social a {
+      display: block;
+    }
+
+    #bouncy {
+      display: block;
+      height: 70px;
+      width: 80%;
+      position: absolute;
+      bottom: .2em;
+      left: 10%;
+      text-align: center;
+      /*z-index: 999;*/
+    }
+
+    #bouncy:hover {
+      animation-name: bounce;
+      animation-duration: .6s;
+      animation-iteration-count: 4;
+    }
+
+    #bouncy img{
+      height: 24px;
+      margin: 1.2em 1em 1em 1em;
+      opacity: .8;
+      transition: .2s;
+    }
+
+    #bouncy:hover img {
+      height: 32px;
+      opacity: 1;
+    }
+
+    @keyframes bounce {
+  	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    20% {transform: translateY(10px);}
+    }
+
+    .home_media {
+      height: 600px;
+    }
+
+    .arrow_right {
+      height: 20px;
+      margin-right: 6px;
+      margin-left: -6px;
+    }
+
+/* -------------------- TAB> ABOUT STYLES -------------------- */
+
+  .intro {
+    padding: 5em 8em 0 8em;
   }
 
-  #bouncy:hover {
-    animation-name: bounce;
-    animation-duration: .6s;
-    animation-iteration-count: 4;
-  }
-
-  #bouncy img{
-    height: 24px;
-    margin: 1.2em 1em 1em 1em;
-    opacity: .8;
-    transition: .2s;
-  }
-
-  #bouncy:hover img {
-    height: 32px;
-    opacity: 1;
-  }
-
-  @keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-  20% {transform: translateY(10px);}
-  }
-
-  .home_media {
-    height: 600px;
-  }
-
-  .arrow_right {
-    height: 20px;
-    margin-right: 6px;
-    margin-left: -6px;
-  }
-
-/* -------------------- TAB AND DESKTOP FOOTER STYLES -------------------- */
+/* -------------------- TAB> FOOTER STYLES -------------------- */
 
   .footLinks {
     margin: 1em 0;
@@ -766,6 +811,13 @@ html, body {
     letter-spacing: 8px;
     line-height: 1.6em;
     padding-left:6px;
+  }
+
+/* -------------------- DESKTOP ABOUT STYLES -------------------- */
+
+  .intro {
+    padding: 6em 8em 0 8em;
+    font-size: 1.1em;
   }
 
 }
