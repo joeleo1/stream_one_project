@@ -1,9 +1,12 @@
 /*    GLOBAL STYLES    */
 
-html, body {
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
+
+body{
   margin: 0 auto;
   width: 100%;
   height: auto;
+  font-family: 'Lato', sans-serif !important;;
   background-color: #000;
   overflow-x: hidden;
 }
@@ -17,13 +20,11 @@ html, body {
 .headerMain {
   display: block;
   padding: 15px 15px 0px 15px;
-  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
   margin-bottom: 1em;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  /*background: rgba(0, 0, 0, 0.8);*/
   z-index: 1;
 }
 
@@ -33,10 +34,6 @@ html, body {
 
 #logoBox {
   margin-left: 10px;
-}
-
-#logoBox h2 {
-  display: none;
 }
 
 #logo {
@@ -97,7 +94,6 @@ html, body {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  font-size: 5vmin;
   transition: .5s;
 }
 
@@ -109,7 +105,7 @@ html, body {
 
 .home_wrapper {
   padding: 0;
-  color: #bfc1be;
+  color: #eeeeee;
 }
 
 .home_hero {
@@ -119,52 +115,57 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  z-index: 0;
-  padding: 1em;
 }
 
 .hh_overlay {
   position: absolute;
-  background: linear-gradient(to bottom right, rgba(1, 19, 52, 0.87), rgba(0, 43, 35, 0.6));
+  background: linear-gradient(to left, rgba(0, 135, 170, 0.3), rgba(62, 8, 8, 0.5));
   top: 0;
   left: 0;
   right: 0;
   height: inherit;
 }
 
-.jumbotron{
+#hero_content{
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 35%;
+  left: 6%;
   width: 90%;
-  transform: translate(-50%,-50%);
-  background: transparent;
-  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
-  text-align: center;
 }
 
-.jumbotron img {
-  display: block;
-  height: 14vh;
-  margin: 0 auto 1em auto;
-  opacity: .8
+#hero_content h1{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: .5em;
 }
 
-.jumbotron h1 {
-  font-weight: 100;
-  font-size: 10vw;
+#hero_content h2{
+  margin-bottom: .5em;
 }
 
-.jumbotron p {
+#hero_content h2:nth-child(3){
+  color: #FF6F3C;
+  font-style: italic;
+}
+
+#hero_content p{
   font-weight: 300;
-  font-size: 12px;
-  margin-top: 1em;
-  letter-spacing: 8px;
-  line-height: 26px;
+  font-size: .7em;
 }
 
-.hero_social {
-  display: none;
+#hero_content button{
+  display: flex;
+  background-color: #155263;
+  border: none;
+  margin-top: 2em;
+  font-weight: 100;
+  font-size: 10px;
+  padding: .6em;
+}
+
+#hero_content img{
+  height: 12px;
+  margin-left: 12px;
 }
 
 #bouncy {
@@ -172,7 +173,6 @@ html, body {
 }
 
 .manc_info {
-  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
   margin: 0 auto;
   position: relative;
 }
@@ -180,7 +180,7 @@ html, body {
 .mi_text {
   padding: 3em 2em;
   color: #dedede;
-  background-color: #1f1f1f;
+  background-color: rgba(55, 71, 79, 0.4);
 }
 
 .mi_text h1 {
@@ -188,7 +188,7 @@ html, body {
   font-size: 1.5em;
   padding-bottom: 1em;
   word-spacing: .5em;
-  color: rgba(255, 206, 0, 0.5);
+  color: #F7B633;
 }
 
 .mi_text p {
@@ -198,7 +198,7 @@ html, body {
 }
 
 .mi_review_i {
-  background-color: #383838;
+  background-color: rgba(96, 125, 139, 0.4);
   font-weight: 300;
   padding: 3em 2em;
   display: flex;
@@ -208,7 +208,7 @@ html, body {
 }
 
 .mi_review_ii {
-  background-color: #505050;
+  background-color: rgba(144, 164, 173, 0.8);
   font-weight: 300;
   padding: 3em 2em;
   display: flex;
@@ -252,7 +252,7 @@ html, body {
 
 .hm_overlay {
   background-color: rgba(0, 0, 0, 0.6);
-  border-bottom: 10px solid #FFCE00;
+  border-bottom: 10px solid #F7B633;
   opacity: 0;
   position: absolute;
   top: 0;
@@ -269,7 +269,6 @@ html, body {
   left: 0;
   right: 0;
   bottom: 0;
-  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
   padding: 0 1em;
 }
 
@@ -379,7 +378,6 @@ html, body {
 
 .about_hero {
   height: 100vh;
-  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
 }
 
 .ah_image {
@@ -393,7 +391,7 @@ html, body {
 
 .ah_image h1 {
   font-weight: 100;
-  font-size: 8vw;
+  font-size: 10vw;
   text-align: center;
   color: rgb(238, 238, 238);
   padding-top: 24vh;
@@ -405,16 +403,17 @@ html, body {
   bottom: 0;
   font-weight: 300;
   word-spacing: 1px;
-  background-color: rgb(24, 45, 49);
+  background: rgba(22, 28, 38, 0.43);
+  border-top: 1px solid rgba(247, 182, 51, 0.8);
   color: #d2d2d2;
-  padding: 2em 2em;
-  border-top: 1px solid rgba(205, 176, 43, .6);
+  padding: 1.2em 1em;
 }
 
 .intro p {
   font-weight: 300;
   word-spacing: 2px;
   line-height: 1.2em;
+  font-size: 1.2em;
 }
 
 /* -------------------- SERVICES STYLES -------------------- */
@@ -440,13 +439,12 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #1c1c1c;
+  background-image: url(/content/images/footer_lodyas.png);
   color: #d0d0d0;
 }
 
 .footContainer a {
-  color: #dedede;
-  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
+  /*color: #dedede;*/
 }
 
 .footLinks {
@@ -479,7 +477,6 @@ html, body {
   margin: 3em 0;
   text-align: center;
   color: #dedede;
-  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 2em;
@@ -491,32 +488,14 @@ html, body {
   margin-bottom: -3px;
 }
 
-.footBtns {
-  display: flex;
-  justify-content: center;
-  margin: 1em 0 2em 0;
-  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
-}
-
-.button {
-  background-color: rgba(0,0,0,0.6);
-  color: #fff;
-  margin: 0 1em;
-  max-width: 80px;
-  border: 1px solid rgba(185,241,236,0.6);
-  font-weight: 300;
-}
-
 .copy {
   margin: 0;
   padding: 1em;
-  font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
   font-weight: 300;
   font-size: 12px;
   color: #dedede;
   text-align: center;
-  background-color: #0a0a0a;
-  border-top: 1px solid #FFCE00;
+  background-color: rgba(14, 18, 20, 0.6);
 }
 
 .copy h5 {
@@ -534,35 +513,12 @@ html, body {
 
 /* -------------------- TAB> HEADER/NAV STYLES -------------------- */
 
-  .headerMain {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 60px;
-    font-family: "Lato", Helvetica, Arial, Lucida, sans-serif;
-    letter-spacing: 2px;
-    padding: 0 20px 0 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /*background-color: rgba(0, 0, 0, 1);*/
-    /*border-bottom: 1px solid rgba(255, 255, 255, 0.4);*/
-    color: #d0d0d0;
+  #logoBox{
+    display: none;
   }
 
-  #logoBox {
-    margin-left: .8em;
-    margin-bottom: 0;
-    width: 62px;
-    /*background-color: rgba(112, 112, 131, 0.4);*/
-    /*border-right: .5px solid #fff;*/
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
-  }
-
-  #logo {
-    height: 40px;
-    opacity: .8;
-    /*padding-bottom: 6px;*/
+  #logo_desk {
+    height: 80px;
   }
 
   .navigation {
@@ -570,17 +526,26 @@ html, body {
   }
 
   .desk_nav {
-    display: block;
-    margin: 8px;
-    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .desk_nav li{
+    margin: 1em 0 0 2em;
   }
 
   .desk_list {
-    height: 50px;
     display: flex;
-    justify-content: space-between;
-    background-color: transparent;
-    margin: 0;
+  }
+
+  #social_desktop{
+    display: flex;
+  }
+
+  #social_desktop img{
+    height: 12px;
   }
 
   .desk_list li {
@@ -621,92 +586,19 @@ html, body {
 
 /* -------------------- TAB> HOME STYLES -------------------- */
 
-  .jumbotron img {
-    height: 12vh;
+  #hero_content{
+    width: 33%;
   }
-
-  .jumbotron h1 {
-    font-weight: 100;
-    font-size: 8vw;
-  }
-
-  .jumbotron p {
-    font-weight: 300;
-    font-size: 1vw;
-    margin-top: 1em;
-    padding-left: 2%;
-    letter-spacing: 12px;
-    line-height: 26px;
-  }
-
-    .hero_social {
-      position: absolute;
-      display: flex;
-      justify-content: flex-end;
-      padding-right: 1em;
-      bottom: 1em;
-      right: 1em;
-      left: 1em;
-      /*opacity: .8;*/
-    }
-
-    .hero_social img {
-      height: 16px;
-      margin: 10px 0;
-    }
-
-    .hero_social a {
-      display: block;
-    }
-
-    #bouncy {
-      display: block;
-      height: 70px;
-      width: 80%;
-      position: absolute;
-      bottom: .2em;
-      left: 10%;
-      text-align: center;
-      /*z-index: 999;*/
-    }
-
-    #bouncy:hover {
-      animation-name: bounce;
-      animation-duration: .6s;
-      animation-iteration-count: 4;
-    }
-
-    #bouncy img{
-      height: 24px;
-      margin: 1.2em 1em 1em 1em;
-      opacity: .8;
-      transition: .2s;
-    }
-
-    #bouncy:hover img {
-      height: 32px;
-      opacity: 1;
-    }
-
-    @keyframes bounce {
-  	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    20% {transform: translateY(10px);}
-    }
-
-    .home_media {
-      height: 600px;
-    }
-
-    .arrow_right {
-      height: 20px;
-      margin-right: 6px;
-      margin-left: -6px;
-    }
 
 /* -------------------- TAB> ABOUT STYLES -------------------- */
 
   .intro {
-    padding: 5em 8em 0 8em;
+    padding: 5% 10% 5% 10%;
+  }
+
+  .intro  p {
+    margin-top: 2%;
+    font-size: 1em;
   }
 
 /* -------------------- TAB> FOOTER STYLES -------------------- */
@@ -728,18 +620,18 @@ html, body {
   .footSocial {
     flex-direction: column;
     padding-left: 5%;
-    padding-top: .2em;
+    padding-top: .1em;
     margin: 1em 0;
   }
 
   .footSocial a {
-    margin-top: 1.3em;
+    margin-top: 1.2em;
   }
 
   .footAddress {
     text-align: left;
-    margin-top: 2em;
     padding-left: 0;
+    line-height: 1.9em;
   }
 
   .footBtns {
@@ -804,20 +696,21 @@ html, body {
 
 /* -------------------- DESKTOP HOME STYLES -------------------- */
 
-  .col-xs-12.bottom h1 {
-    font-size: calc(.6rem + .5vmin);
-    color: #eeeeee;
-    font-weight: 300;
-    letter-spacing: 8px;
-    line-height: 1.6em;
-    padding-left:6px;
-  }
 
-/* -------------------- DESKTOP ABOUT STYLES -------------------- */
+
+}
+
+/* -------------------- DESKTOP 1920PX ABOUT STYLES -------------------- */
+
+@media (min-width: 1920px) {
 
   .intro {
-    padding: 6em 8em 0 8em;
-    font-size: 1.1em;
+    padding: 5% 15% 5% 15%;
+  }
+
+  .intro p {
+    margin-top: 4%;
+    font-size: 1.4em;
   }
 
 }
